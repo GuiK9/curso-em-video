@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        > = children
+        : = pseudo-class
+        :: = pseudo-element
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: black;
+        }
+        a:active{
+            color: greenyellow;
+        }
+        .especial{
+            background-color: rgba(255, 0, 0, 0.61);
+            
+        }
+        .especial::after{
+            content: '⇐';
+        }
+        .especial::before{
+            content: '⇒';
+        }
+        /*a::after{
+            content: '[Link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }*/
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/GuiK9" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://www.instagram.com/gui_jh/" target="_blank" class="especial">Perfil do instagram</a></li>
+        <li><a href="https://www.youtube.com/channel/UCrWvhVmt0Qac3HgsjQK62FQ" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>

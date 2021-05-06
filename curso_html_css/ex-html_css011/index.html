@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <!--parece uma imagem mas permite que vc crie vários sources várias fontes-->
+    
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto flexível">
+    </picture>
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender a colocar audio em HTML5</p>
+    <!-- São formatos mais compatíveis: MP3 WAV OGG-->
+   <audio preload="metadata" autoplay controls loop> 
+        <source src="midia/World War Outerspace - Audio Hertz.mp3" type="audio/mpeg"> <!--o meia type usado é o mesmo encontrado em: www.iana.org/assignments/media-types, para o mp3 no caso -->
+        <p>infelizmente seu navegador não consegue reproduzir o audio <a href="" download="midia/world war outerspace - audio Heartz.mp3">clique aqui</a> para baixa-lo</p>
+    </audio>
+</body>
+</html>
