@@ -1,0 +1,5 @@
+print('Digite um valor: ')
+n1 = input()
+print('Digite outro valor')
+n2 = input()
+print(f'a soma dos seus valores é: {float(n1) + float(n2)}' )
